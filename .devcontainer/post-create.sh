@@ -11,6 +11,11 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 volta install node@$NODE_VERSION
 volta install npm
 
+# Install Rust (standard installation) and build-essential
+curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
+sudo apt update
+sudo apt install -y build-essential
+
 # NOTE: ここで `source ~/.bashrc` を実行しても継承されたターミナルには反映されないため、
 #       PATH の変更を手動で反映してください
 echo "Post-create setup completed."
