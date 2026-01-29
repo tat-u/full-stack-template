@@ -1,0 +1,12 @@
+{
+  "editor.formatOnSave": true,
+  "[rust]": {
+    "editor.tabSize": 4
+  },
+  "[typescriptreact]": {
+    "editor.tabSize": 2
+  },
+  "[typescript]": {
+    "editor.tabSize": 2
+  }
+}
