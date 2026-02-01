@@ -1,13 +1,13 @@
 <template>
   <div>
-    <span>ランディングページ</span>
-    <span>今後、ログインへの導線が用意される</span>
-    <a href="/login"><span>ログイン</span></a>
+    <span>トップページ（ログイン前でも閲覧可）</span>
+    <a href="/login">ログイン画面へ</a>
   </div>
 </template>
 
 <style scoped>
-span {
+span,
+a {
   display: block;
 }
 </style>

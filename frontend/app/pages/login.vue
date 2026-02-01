@@ -1,13 +1,20 @@
+<script setup>
+import { signInWithGoogle } from "@@/feature/auth";
+</script>
+
 <template>
   <div>
     <span>ログインページ</span>
-    <a href="/"><span>トップページへ</span></a>
-    <a href="/dashboard"><span>ダッシュボードへ</span></a>
+    <a href="/">トップページへ</a>
+    <a href="/dashboard">ダッシュボードへ</a>
+    <button @click="signInWithGoogle">Googleでログイン</button>
   </div>
 </template>
 
 <style scoped>
-span {
+span,
+a,
+button {
   display: block;
 }
 </style>
