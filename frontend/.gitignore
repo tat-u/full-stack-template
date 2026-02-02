@@ -22,3 +22,7 @@ logs
 .env
 .env.*
 !.env.example
+
+# SSL/TLS certificates
+server.crt
+server.key
