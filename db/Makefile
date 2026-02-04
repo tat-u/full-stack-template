@@ -5,6 +5,10 @@ mysql:
 # SEE: https://dev.mysql.com/doc/refman/8.0/en/password-security-user.html
 	mysql --defaults-extra-file=.my.cnf
 
+# Dump all databases to dump.sql
+mysqldump:
+	mysqldump --defaults-extra-file=.my.cnf --single-transaction --all-databases > dump.sql
+
 # Attach to the running database container's bash
 attach:
 	docker compose exec db bash
