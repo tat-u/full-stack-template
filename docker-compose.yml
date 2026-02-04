@@ -1,0 +1,7 @@
+services:
+  db:
+    build: ./db
+    ports:
+      - 3306:3306 # host:container
+    env_file:
+      - ./db/.env

@@ -8,5 +8,9 @@
   },
   "[typescript]": {
     "editor.tabSize": 2
+  },
+  "[makefile]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": false
   }
 }
