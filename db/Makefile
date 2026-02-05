@@ -1,3 +1,5 @@
+.PHONY: mysql mysqldump attach
+
 # Connet to MySQL database as defined in .my.cnf
 mysql:
 # コマンドライン引数でパスワードを渡すとログファイルへ残り、

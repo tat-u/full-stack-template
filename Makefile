@@ -1,3 +1,5 @@
+.PHONY: up down
+
 # Start the containers in detached mode
 up:
 # `-d` により、勝手にターミナルがアタッチされないようにする
