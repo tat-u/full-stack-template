@@ -14,3 +14,8 @@ mysqldump:
 # Attach to the running database container's bash
 attach:
 	docker compose exec db bash
+
+# Print current date in YYYYMMDDHHMMSS format
+# .sql migration files use this format for timestamp prefix
+date:
+	date +%Y%m%d%H%M%S
