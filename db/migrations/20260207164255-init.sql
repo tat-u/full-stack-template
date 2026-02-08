@@ -80,3 +80,12 @@ CREATE TABLE `watchlist` (
   CONSTRAINT fk_watchlist_security_id FOREIGN KEY (security_id) REFERENCES `security` (security_id) ON DELETE CASCADE
 
 ) ENGINE InnoDB;
+
+-- シードデータの挿入
+
+INSERT INTO `security` (ticker_symbol, full_name, display_name) VALUES
+  ('AAPL', 'Apple Inc.', 'Apple'),
+  ('MSFT', 'Microsoft Corporation', 'Microsoft'),
+  ('GOOGL', 'Alphabet Inc. Class A', 'Alphabet A'),
+  ('AMZN', 'Amazon.com, Inc.', 'Amazon'),
+  ('TSLA', 'Tesla, Inc.', 'Tesla');
