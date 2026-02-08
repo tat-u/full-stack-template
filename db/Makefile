@@ -1,4 +1,4 @@
-.PHONY: mysql mysqldump attach
+.PHONY: mysql mysqldump attach date
 
 # Connet to MySQL database as defined in .my.cnf
 # e.g.) `make mysql < migration.sql`
