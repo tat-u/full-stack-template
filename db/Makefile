@@ -1,4 +1,4 @@
-.PHONY: mysql mysqldump attach date
+.PHONY: mysql mysqldump attach date reset
 
 # Connet to MySQL database as defined in .my.cnf
 # e.g.) `make mysql < migration.sql`
@@ -20,3 +20,7 @@ attach:
 # .sql migration files use this format for timestamp prefix
 date:
 	date +%Y%m%d%H%M%S
+
+reset:
+	mysql --defaults-extra-file=.my.cnf -e 'DROP DATABASE IF EXISTS `webapp_prod`;'
+	mysql --defaults-extra-file=.my.cnf -e 'DROP DATABASE IF EXISTS `webapp_test`;'
