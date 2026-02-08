@@ -1,6 +1,7 @@
 .PHONY: mysql mysqldump attach
 
 # Connet to MySQL database as defined in .my.cnf
+# e.g.) `make mysql < migration.sql`
 mysql:
 # コマンドライン引数でパスワードを渡すとログファイルへ残り、
 # 環境変数で渡すと /proc/$pid/environ へ残るため、公式推奨の方法である設定ファイル経由で接続する
